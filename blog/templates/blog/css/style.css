@@ -1,0 +1,98 @@
+.header {
+    text-align: center;
+    font-size: 52px;
+    color: orangered;
+    padding: 15px;
+    background-color: white;
+    
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+li {
+
+    padding: 0 30px;
+}
+.nav {
+    background-color: black;
+    
+}
+li a {
+    color: orangered;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+    
+}
+#small-h {
+    font-size: 28px;
+    color: rgb(245, 239, 239);
+}
+.body-img {
+    background-color: rgb(12, 9, 12);
+    background-image: url(../images/bgbox.jpg);
+    padding: 15px;
+    margin: 0 auto;
+    padding: 1rem 1rem 1rem 3rem;
+    align-content: center;
+}
+
+#link {
+    background-color: white;
+    text-align: center;
+    font-size: 25px;
+    
+}
+background-image {
+    width: 100%;
+    height: auto;
+}
+.cart {
+    width: 32px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    padding: 2px;
+    border-radius: 25px;
+}
+.gallery:hover {
+    transform: scale(1.5, 1.5);
+}
+@media only screen and (max-width: 700px) {
+    .body-img{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 6px 0;
+    }
+    img {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .body-img{
+        width: 100%;
+        display: block;
+    }
+    .header .nav #link {
+        width: 100%;
+    }
+    img {
+        width: auto;
+    }
+    ul {
+        display: block;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 2500px){
+    img {
+        width: calc(100% / 4);
+    }
+}
