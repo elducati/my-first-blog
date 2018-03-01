@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends 'blog/base.html' %}
 
 {% block content %}
@@ -10,4 +11,25 @@
         <h1>{{ post.title }}</h1>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
+=======
+{% extends 'blog/base.html' %} {% block content %}
+<div class="post">
+    {% if post.published_date %}
+    <div class="date">
+        {{ post.published_date }}
+    </div>
+    {% else %}
+    <a class="btn btn-default" href="{% url 'post_publish' pk=post.pk %}">Publish</a>
+    {% endif %} {% if user.is_authenticated %}
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+        <span class="glyphicon glyphicon-pencil"></span>
+    </a>
+    <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}">
+        <span class="glyphicon glyphicon-remove"></span>
+    </a>
+    {% endif %}
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.text|linebreaksbr }}</p>
+</div>
+>>>>>>> cbafd598758e8c02af345d6b3bddb0da61f36b93
 {% endblock %}

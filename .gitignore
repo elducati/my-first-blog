@@ -2,5 +2,9 @@
 *~
 __pycache__
 myvenv
+<<<<<<< HEAD
+=======
+db.sqlite3
+>>>>>>> cbafd598758e8c02af345d6b3bddb0da61f36b93
 /static
 .DS_Store
